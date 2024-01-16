@@ -1,0 +1,193 @@
+*
+{
+    text-decoration: none !important;
+}
+body
+{
+    background-color: #1e202b !important;
+}
+
+.navbar
+{
+    background-color: transparent !important;
+}
+
+.active-item
+{
+    border: 2px solid #009ad8 !important;
+    color: #009ad8 !important;
+}
+
+.my-p
+{
+    padding: 5px 25px !important;
+}
+
+
+.nav-link:hover
+{
+    border: 2px solid #009ad8 !important;
+    color: #009ad8 !important;
+    
+}
+
+.color-bfc1c8
+{
+    color: #bfc1c8 !important;
+    font-size: 10px !important;
+}
+
+.home
+{
+    min-height: 350px;
+    background-image: url("../images/banner.png");
+    background-size: cover;
+    padding: 70px 0;
+}
+
+
+.input
+{
+   padding : 20px 50px 20px 20px;
+   border-radius: 30px !important;
+   background: #1e202b;
+   border: 0;
+   color: white !important;
+}
+input::placeholder
+{
+    color: gray !important;
+}
+
+.form-control:focus
+{
+    background: #1e202b !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.button
+{
+    position: absolute !important;
+    top: 5px !important;
+    right: 5px !important;
+    bottom: 5px !important;
+}
+
+.button-2
+{
+    position: absolute !important;
+    top: 10px !important;
+    right: 20px !important;
+}
+
+.taple-1
+{
+    background-color: #323544 !important;
+}
+
+.taple-2
+{
+    background-color: #262936 !important;
+}
+
+.my-w 
+{
+    width: 100% !important;
+}
+
+.fs-table
+{
+    font-size: 80px;
+}
+
+.day
+{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.color-table
+{
+    color: #BFC1CB;
+}
+
+.color-status
+{
+    color: #009AD8 ;
+}
+
+.for-table
+{
+    position: relative !important;
+    bottom: 110px;
+    left: 0 ;
+    margin-bottom: -40px;
+}
+
+.w-fit-content
+{
+    width: fit-content;
+}
+
+
+.footer
+{
+    background-color: #262936;
+}
+
+.a-color
+{
+     color: #009ad8;
+}
+
+.a-bg
+{
+    background-color:  #1e202b;
+    transition: 0.5s background-color , 0.5s color;
+}
+
+.a-border 
+{
+    display: inline-block;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.a-bg:hover
+{
+    background-color:  #009ad8;
+    color: white;
+}
+
+.p-color
+{
+    color: #bfc1c8;
+}
+
+
+@media (max-width: 991.5px) {
+    .ul
+    {
+        margin-top: 13px;
+    }
+
+    .ps-0
+    {
+        padding: 0 12px !important;
+    }
+
+    .for-rounded
+    {
+        border-radius: 1rem;
+    }
+
+    .m
+    {
+        margin-top: 24px;
+    }
+    
+}
+
+

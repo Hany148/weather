@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootsrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-5 navbar-dark">
+        <div class="container">
+
+            <a class="text-decoration-none" href="">
+                <img class="me-3 align-middle" width="64px" src="images/logo@2x.png" alt="">
+                <div class="d-inline-block align-middle">
+                    <h1 class="navbar-brand fs-5 m-0 pb-0">Weather</h1>
+                    <span class="navbar-brand fs-6 color-bfc1c8 pt-0">tagline gose here</span>
+                </div>
+
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item me-5 mt-2">
+                        <a class="nav-link active-item my-p rounded-pill" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item me-5 mt-2">
+                        <a class="nav-link my-p rounded-pill " aria-current="page" href="#">News</a>
+                    </li>
+
+                    <li class="nav-item me-5 mt-2">
+                        <a class="nav-link my-p rounded-pill" aria-current="page" href="#">Live cameras</a>
+                    </li>
+
+                    <li class="nav-item me-5 mt-2">
+                        <a class="nav-link my-p rounded-pill" aria-current="page" href="#">Photos</a>
+                    </li>
+
+                    <li class="nav-item me-5 mt-2">
+                        <a class="nav-link my-p rounded-pill" aria-current="page" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="home">
+
+        <div class="container d-flex justify-content-center align-items-center">
+
+            <div class=" my-w  position-relative mx-xl-5">
+                <input id="find_location" class=" m-auto form-control w-100 input rounded-pill " type="text"
+                    placeholder="Find your location..." />
+
+                <button class="btn btn-info rounded-pill text-light px-5 py-2 position-absolute button">Find</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="body for-table">
+        <div class="container">
+
+            <div class="mx-xl-5 row text-light m-auto gap-sm-4 gap-lg-0 ">
+
+                <div class="col-lg-4   p-0 taple-1 rounded-start-4 for-rounded">
+
+                    <div>
+
+                        <div class="d-flex justify-content-between day rounded-start-4 p-2 color-table for-rounded">
+                            <span id="day_t_1">Sunday</span>
+                            <div>
+                                <span id="day_month_t_1">7</span>
+                                <span id="month_t_1"> January</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p id="country_t_1" class="ms-3 fs-3 mt-2 color-table">Cairo</p>
+
+                            <div>
+
+                                <div>
+                                    <p class="fs-table fw-bolder w-fit-content m-auto" id="temp_t_1">
+                                        15<sup>o</sup>C
+                                    </p>
+                                </div>
+
+
+                                <div>
+                                    <div class="w-fit-content m-auto">
+                                        <img id="img_t_1" class="" width="120px" src="images/113.webp" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="ms-3 mt-3">
+
+                            <p id="text_t_1" class="ms-1 color-status">Clear</p>
+
+                            <ul class="list-unstyled d-flex">
+
+                                <li class="me-4">
+
+                                    <img class="me-1" src="images/icon-umberella.png" alt="">
+
+                                    <p class="d-inline-block" id="perc_t_1">
+                                        20%
+                                    </p>
+
+                                </li>
+
+                                <li class="me-4">
+
+                                    <img class="me-1" src="images/icon-wind.png" alt="">
+
+                                    <p class="d-inline-block" id="wind_t_1">
+                                        18km/h
+                                    </p>
+
+                                </li>
+
+
+                                <li class="me-4">
+
+                                    <img class="me-1" src="images/icon-compass.png" alt="">
+
+                                    <p class="d-inline-block" id="dir">
+                                        East
+                                    </p>
+
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 m p-0 taple-2 for-rounded">
+
+                    <div>
+
+                        <div class="d-flex justify-content-center day p-2 color-table for-rounded">
+                            <span id="day_t_2">Monday</span>
+                        </div>
+
+                        <div class="mt-5">
+
+                            <div class="d-flex align-items-center flex-column ">
+                                <img id="img_t_2" width="48px" src="images/113 (1).webp" alt="">
+                                <p id="max_temp_t_2" class="mt-4 fs-3 fw-bolder mb-1">
+                                    15<sup>o</sup>C
+                                </p>
+
+                                <p id="min_temp_t_2" class="fs-6 color-table">
+                                    15<sup>o</sup>C
+                                </p>
+                                <p id="text_t_2" class="color-status">Clear</p>
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 m p-0 taple-1 rounded-end-4 for-rounded">
+
+                    <div>
+
+                        <div class="d-flex justify-content-center rounded-end-4 day p-2 color-table for-rounded">
+                            <span id="day_t_3">Monday</span>
+                        </div>
+
+                        <div class="mt-5">
+
+                            <div class="d-flex align-items-center flex-column ">
+                                <img id="img_t_3" width="48px" src="images/113 (1).webp" alt="">
+                                <p id="max_temp_t_3" class="mt-4 fs-3 fw-bolder mb-1">
+                                    15<sup>o</sup>C
+                                </p>
+
+                                <p id="min_temp_t_3" class="fs-6 color-table">
+                                    15<sup>o</sup>C
+                                </p>
+                                <p id="text_t_3" class="color-status">Clear</p>
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="footer py-5">
+
+        <div class="container">
+
+            <div class="row  mx-xl-5">
+
+                <div class=" position-relative col-lg-8 ps-0">
+                    <input class=" m-auto form-control w-100 input rounded-pill " type="text"
+                        placeholder="Enter your email to subscribe..." />
+
+                    <button class="btn btn-info rounded-pill text-light py-2 px-4  position-absolute button-2">Find
+                    </button>
+
+                </div>
+
+                <div class="col-lg-4 d-flex justify-content-center align-items-center ">
+                    <ul class="list-unstyled d-flex  mb-0 ul">
+                        <li class="mx-2 ">
+                            <a class=" a-border a-color a-bg d-flex justify-content-center align-items-center" href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="mx-2">
+                            <a class=" a-border a-color a-bg d-flex justify-content-center align-items-center" href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="mx-2">
+                            <a class=" a-border a-color a-bg d-flex justify-content-center align-items-center" href="">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                        </li>
+                        <li class="mx-2">
+                            <a class=" a-border a-color a-bg d-flex justify-content-center align-items-center" href="">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="mt-4  mx-xl-5">
+                <p class="fs-6 p-color">
+                    Copyright 2014 Company name. Designed by Themezy. All rights reserved
+                </p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- my js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
