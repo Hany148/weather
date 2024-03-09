@@ -66,7 +66,7 @@ function displayToday(data) {
     day_month_t_1.innerHTML = date.getDate();
     country_t_1.innerHTML = data.location.name;
     text_t_1.innerHTML = data.current.condition.text;
-    temp_t_1.innerHTML = `${data.current.temp_c}<sup>o</sup>C`;
+    temp_t_1.innerHTML = `${Math.floor(data.current.temp_c)}<sup> oC</sup>`;
     img_t_1.setAttribute("src", `https:${data.current.condition.icon}`);
     perc_t_1.innerHTML = `${data.current.humidity}%`;
     wind_t_1.innerHTML = data.current.wind_kph + ' km/h';
@@ -78,15 +78,15 @@ function displayNextday(data_next_day) {
     let date_1 = new Date(data_next_day[1].date)
     day_t_2.innerHTML = date_1.toLocaleDateString("en-us", { weekday: "long" })
     img_t_2.setAttribute("src", `https:${data_next_day[1].day.condition.icon}`);
-    min_temp_t_2.innerHTML = `${data_next_day[1].day.mintemp_c}<sup>o</sup>C`;
-    max_temp_t_2.innerHTML = `${data_next_day[1].day.maxtemp_c}<sup>o</sup>C`;
+    min_temp_t_2.innerHTML = `${Math.floor(data_next_day[1].day.mintemp_c)}<sup> oC</sup>`;
+    max_temp_t_2.innerHTML = `${Math.floor(data_next_day[1].day.maxtemp_c)}<sup> oC</sup>`;
     text_t_2.innerHTML = data_next_day[1].day.condition.text;
 
     let date_2 = new Date(data_next_day[2].date)
     day_t_3.innerHTML = date_2.toLocaleDateString("en-us", { weekday: "long" })
     img_t_3.setAttribute("src", `https:${data_next_day[2].day.condition.icon}`);
-    min_temp_t_3.innerHTML = `${data_next_day[2].day.mintemp_c}<sup>o</sup>C`;
-    max_temp_t_3.innerHTML = `${data_next_day[2].day.maxtemp_c}<sup>o</sup>C`;
+    min_temp_t_3.innerHTML = `${Math.floor(data_next_day[2].day.mintemp_c)}<sup> oC</sup>`;
+    max_temp_t_3.innerHTML = `${Math.floor(data_next_day[2].day.maxtemp_c)}<sup> oC</sup>`;
     text_t_3.innerHTML = data_next_day[2].day.condition.text;
 
 }
@@ -98,7 +98,6 @@ find_location.addEventListener("input", function () {
     let input_data = find_location.value;
     getData(input_data);
 })
-
 
 
 

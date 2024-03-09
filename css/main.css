@@ -12,23 +12,28 @@ body
     background-color: transparent !important;
 }
 
-.active-item
-{
-    border: 2px solid #009ad8 !important;
-    color: #009ad8 !important;
-}
+
 
 .my-p
 {
     padding: 5px 25px !important;
 }
 
+.nav-link
+{
+    border: 2px solid transparent !important;
+}
 
 .nav-link:hover
 {
+    border-color: #009ad8 !important;
+    color: #009ad8 !important;
+}
+
+.active-item
+{
     border: 2px solid #009ad8 !important;
     color: #009ad8 !important;
-    
 }
 
 .color-bfc1c8
